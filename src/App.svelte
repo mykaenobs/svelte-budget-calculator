@@ -77,6 +77,8 @@
 		expenses = localStorage.getItem('expenses')
 			? JSON.parse(localStorage.getItem('expenses'))
 			: [];
+
+		document.title = 'Budget Calculator';
 	});
 
 	afterUpdate(() => setLocalStorage());
